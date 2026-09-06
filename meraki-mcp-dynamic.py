@@ -2,8 +2,11 @@
 #
 # SPDX-License-Identifier: MIT
 
-import os
 import sys
+sys.path.insert(0, 'C:/mcp')
+from mcp_creds import load_env as _load_env; _load_env()
+
+import os
 import json
 import meraki
 import asyncio
